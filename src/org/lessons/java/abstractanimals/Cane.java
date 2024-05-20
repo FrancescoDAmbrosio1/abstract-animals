@@ -1,6 +1,6 @@
 package org.lessons.java.abstractanimals;
 
-public class Cane extends Animale {
+public class Cane extends Animale implements INuotante{
 	
 	public Cane() {	
 		this.nome = "Cane";
@@ -24,6 +24,12 @@ public class Cane extends Animale {
 	
 	public String getAlimentazione() {
 		return alimentazione;
+	}
+
+	@Override
+	public void nuota() {
+		System.out.println("Sto nuotando!!!");
+		
 	}
 	
 }
